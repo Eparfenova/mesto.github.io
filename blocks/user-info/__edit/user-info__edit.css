@@ -1,0 +1,28 @@
+.user-info__edit {
+    margin-top: 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    cursor: pointer;
+}
+
+.user-info__edit:hover{
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+  }
