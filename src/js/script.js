@@ -1,4 +1,7 @@
 import { Card } from './Card.js';
+import { Api } from './Api';
+import { CardList } from './CardList';
+import { FormValidator } from './FormValidator';
 
 const config = {token: "8368049f-49af-493d-aed3-5e016b69613b", id: "cohort9",};
 const api = new Api(config);

@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
   constructor(elementPopup) {
     this.elementPopup = elementPopup;
   }
