@@ -1,4 +1,4 @@
-export default class Card {
+export class Card {
   constructor(dataCard, container, openImage) {
     this.container = container;
     this.openImage = openImage;

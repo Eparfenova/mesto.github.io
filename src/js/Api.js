@@ -1,11 +1,11 @@
-export default class Api {
+export class Api {
     constructor(config) {
         this.config = config;
     }
     getUserInfo() {
-        return fetch(`https://praktikum.tk/${config.id}/users/me`, {
+        return fetch(`https://praktikum.tk/${this.config.id}/users/me`, {
           headers: {
-            authorization: config.token
+            authorization: this.config.token
           }
         })
           .then(res => {
@@ -20,10 +20,10 @@ export default class Api {
     }
 
     patchEdit(inputName, inputAbout) {
-        return fetch(`https://praktikum.tk/${config.id}/users/me`, {
+        return fetch(`https://praktikum.tk/${this.config.id}/users/me`, {
           method: 'PATCH',
           headers: {
-            authorization: config.token,
+            authorization: this.config.token,
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
@@ -45,9 +45,9 @@ export default class Api {
 
 
     getCards() {    
-        return fetch(`https://praktikum.tk/${config.id}/cards`, {
+        return fetch(`https://praktikum.tk/${this.config.id}/cards`, {
           headers: {
-            authorization: config.token
+            authorization: this.config.token
           }
         })
           .then(res => {
