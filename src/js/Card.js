@@ -41,7 +41,7 @@ export class Card {
   }
 
   open(event) {
-    if (event.target.classList.contains('.place-card__image')) {
+    if (event.target.classList.contains('place-card__image')) {
       const image = this.card.querySelector('.place-card__image').style.backgroundImage;
       const url = image.substr(5, image.length - 7);
       this.openImage(url);
