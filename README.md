@@ -1,13 +1,14 @@
 # mesto.github.io
 
-  Версия 0.0.2
+  Версия 0.0.3
   
-  Ссылка на репозиторий: https://github.com/Eparfenova/mesto.github.io.git
+  Ссылка на репозиторий: https://eparfenova.github.io/mesto.github.io/
 
   Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.
 
-  В новой версии добавлено:
+  Добавлено:
   - Проект выложен на GitHub
   - Установка WebPack
   - npm run build для сборки проекта
   - npm run dev для открытия на локальном сервере
+ 
