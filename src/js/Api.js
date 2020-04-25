@@ -3,7 +3,7 @@ export class Api {
         this.config = config;
     }
     getUserInfo() {
-        return fetch(`https://praktikum.tk/${this.config.id}/users/me`, {
+        return fetch(`${this.config.url}/${this.config.id}/users/me`, {
           headers: {
             authorization: this.config.token
           }
@@ -20,7 +20,7 @@ export class Api {
     }
 
     patchEdit(inputName, inputAbout) {
-        return fetch(`https://praktikum.tk/${this.config.id}/users/me`, {
+        return fetch(`${this.config.url}/${this.config.id}/users/me`, {
           method: 'PATCH',
           headers: {
             authorization: this.config.token,
@@ -45,7 +45,7 @@ export class Api {
 
 
     getCards() {    
-        return fetch(`https://praktikum.tk/${this.config.id}/cards`, {
+        return fetch(`${this.config.url}/${this.config.id}/cards`, {
           headers: {
             authorization: this.config.token
           }

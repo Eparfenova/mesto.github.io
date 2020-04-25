@@ -7,11 +7,8 @@ import { PopupEdit } from './PopupEdit';
 import { PopupImage } from './PopupImage';
 import { UserInfo } from './UserInfo';
 
-
-
-const config = {token: "8368049f-49af-493d-aed3-5e016b69613b", id: "cohort9",};
+const config = {token: "8368049f-49af-493d-aed3-5e016b69613b", id: "cohort9", url: API_URL};
 const api = new Api(config);
-
 
 const root = document.querySelector('.root');
 const placeList = root.querySelector('.places-list');
@@ -42,9 +39,6 @@ const userInfo = new UserInfo(root.querySelector('.user-info'), api);
 userInfo.getUserInfo();
 const popupEdit = new PopupEdit(document.querySelector("#edit"), userInfo, api);
 setTimeout(() => { popupEdit.paste(); }, 500);
-
-
-
 
 editButton.addEventListener('click', function () {
   popupEdit.open();

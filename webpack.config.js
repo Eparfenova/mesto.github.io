@@ -73,8 +73,11 @@ module.exports = {
     new WebpackMd5Hash(),
 
     new webpack.DefinePlugin({
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+        __MODE__: JSON.stringify(process.env.NODE_ENV),
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        'API_URL': JSON.stringify(isDev ? 'http://praktikum.tk' : 'https://praktikum.tk')
     })
   
   ]
 };
+
