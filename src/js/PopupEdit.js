@@ -1,4 +1,4 @@
-class PopupEdit {
+export class PopupEdit {
   constructor(popup, userInfo, api) {
     this.popup = popup;
     this.userInfo = userInfo;
